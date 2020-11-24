@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>CSS Transforms</title>
+    </head>
+    <body>
+        <style>
+            body {
+                margin:100px;
+            }
+            div.box {
+                padding: 50px;
+                border-style:ridge;
+                width:200px;
+                background-color: red;
+            }
+
+            div.box:hover {
+                animation-name: hoverBox;
+                animation-duration: 2s;
+                animation-fill-mode: both;
+            }
+
+            @keyframes hoverBox {
+                from {background-color: red; transform:rotateX(0deg);}
+                to {background-color: yellow; transform:rotateX(50deg);}
+            }
+
+            @keyframes hoverBoxOff {
+                from {background-color: yellow; transform:rotateX(0deg);}
+                to {background-color: red; transform:rotateX(-50deg);}
+            }
+        </style>
+        <div style="perspective: 1000px;">
+            <div class="box">test</div>
+        </div>
+    </body>
+</html>
