@@ -10,11 +10,11 @@
             div.box {
                 padding: 50px;
                 border-style:ridge;
-                width:200px;
+                width:500px;
                 background-color: red;
             }
 
-            div.box:hover {
+            div.box:hover:not(.not) {
                 animation-name: hoverBox;
                 animation-duration: 2s;
                 animation-fill-mode: both;
@@ -22,16 +22,33 @@
 
             @keyframes hoverBox {
                 from {background-color: red; transform:rotateX(0deg);}
-                to {background-color: yellow; transform:rotateX(50deg);}
-            }
-
-            @keyframes hoverBoxOff {
-                from {background-color: yellow; transform:rotateX(0deg);}
-                to {background-color: red; transform:rotateX(-50deg);}
+                to {background-color: yellow; transform:rotateX(30deg);}
             }
         </style>
         <div style="perspective: 1000px;">
-            <div class="box">test</div>
+            <div class="box">The following code is what creates this box and hover action:
+                <br>
+                <code><pre>
+div.box {
+    padding: 50px;
+    border-style:ridge;
+    width:200px;
+    background-color: red;
+}
+
+div.box:hover {
+    animation-name: hoverBox;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes hoverBox {
+    from {background-color: red; transform:rotateX(0deg);}
+    to {background-color: yellow; transform:rotateX(50deg);}
+}
+                </pre></code>
+                The animation keyframes are defined as a type of preset which can be applied to an element via the "animation-name" variable.
+            </div>
         </div>
     </body>
 </html>
