@@ -5,12 +5,12 @@
     <body>
         <style>
             body {
-                margin:150px;
+                margin:180px;
             }
             div.box {
                 padding: 50px;
                 border-style:ridge;
-                width:500px;
+                width:800px;
                 background-color: red;
             }
 
@@ -44,7 +44,7 @@ div.box:hover {
 
 @keyframes hoverBox {
     from {background-color: red; transform:rotateX(0deg);}
-    to {background-color: yellow; transform:rotateX(50deg);}
+    to {background-color: yellow; transform:rotateX(30deg) translateY(50px) translateZ(50px);}
 }
                 </pre></code>
                 The animation keyframes are defined as a type of preset which can be applied to an element via the "animation-name" variable.
