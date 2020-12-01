@@ -100,6 +100,21 @@
                 float: left;
                 overflow: hidden;
             }
+
+            .col-4 {
+                width: 32%;
+                float: left;
+                padding: 15px;
+                border-style: dotted;
+                
+                margin:10px;
+            }
+
+            @media screen and (max-width: 600px) {
+                .col-4 {
+                    width: 100%;
+                }
+            }
         </style>
     </head>
     <body>
@@ -122,8 +137,11 @@
             <h1>Float & Layout</h1>
             <p>Examples of layouts and floats.</p>
         </div> 
-        <div class="lfloat">In order to cre</div>
-        <div class="clearfloat">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</div>
-        <p class="rfloat">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+        <img src="https://cdn.pixabay.com/photo/2016/12/16/11/42/dawn-1911173__340.jpg" style="max-width:100%;">
+        <div class="row">
+            <div class="col-4">In order to create these columns.</div>
+            <div class="col-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</div>
+            <div class="col-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</div>
+        </div>
     </body>
 </html>
