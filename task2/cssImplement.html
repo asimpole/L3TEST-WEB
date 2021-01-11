@@ -7,6 +7,30 @@
         <h1 style="color: red;">Example of inline</h1>
         <h1 id="embedded">Example of embedded</h1>
         <h1 id="external">Example of external</h1>
+        <br>
+        <h2>This page's code:</h2>
+        <code><pre><textarea readonly rows="16" cols="138"><html>
+    <head>
+        <title>CSS Implementations</title>
+        <link rel="stylesheet" href="external.css"> <!-- This inlcudes the CSS code from external.css -->
+    </head>
+    <body>
+        <h1 style="color: red;">Example of inline</h1> <!-- The CSS code is in the HTML tag. -->
+        <h1 id="embedded">Example of embedded</h1> <!-- The CSS code is referenced by ID, the code itself is in style tags. -->
+        <h1 id="external">Example of external</h1> <!-- The CSS code is referenced by ID, the code itself is in the external.css file -->
+    </body>
+    <style>
+        #embedded {
+            color: pink;
+        }
+    </style>
+</html></textarea></pre></code>
+<h2>external.css:</h2>
+<code><pre><textarea readonly rows="3" cols="20">
+#external {
+    color: orange;
+}
+</textarea></pre></code>
     </body>
     <style>
         #embedded {
